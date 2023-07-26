@@ -1,70 +1,138 @@
-# Getting Started with Create React App
+<br/>
+<p align="center">
+  <a href="https://github.com/assyifaptrs/mama-recipe-app">
+    <img src="https://i.postimg.cc/JnsbMGwj/mamarecipe-logo.png" alt="Logo" width="150" height="180">
+  </a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <h3 align="center">Mama Recipe</h3>
 
-## Available Scripts
+  <p align="center">
+    Discover Recipe & Delicious Food.
+    <br/>
+    <br/>
+    <a href="https://github.com/assyifaptrs/mama-recipe-app"><strong>Explore the docs »</strong></a>
+    <br/>
+    <br/>
+    <a href="https://github.com/assyifaptrs/mama-recipe-app">View Demo</a>
+    .
+    <a href="https://github.com/assyifaptrs/mama-recipe-app/issues">Report Bug</a>
+    .
+    <a href="https://github.com/assyifaptrs/mama-recipe-app/issues">Request Feature</a>
+  </p>
+</p>
 
-In the project directory, you can run:
+## Table Of Contents
 
-### `npm start`
+- [About the Project](#about-the-project)
+- [Built With](#built-with)
+- [Installation](#installation)
+- [Related Project](#related-project)
+- [Contact](#contact)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## About The Project
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<p align="center">
+  Welcome to our mouthwatering world of culinary delights! Our recipes food website, powered by the cutting-edge React.js framework, is your go-to destination for a delightful gastronomic journey! 🥗
+</p>
 
-### `npm test`
+<p align="center">
+  With the power of React.js, we've harnessed the latest web technologies to deliver a lightning-fast browsing experience. Say goodbye to long loading times, as our optimized performance guarantees swift access to your favorite recipes and cooking tips.
+</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p align="center">
+  But it's not just about recipes! React.js empowers us to build a dynamic community of food enthusiasts like yourself. Engage in lively discussions, share your culinary masterpieces, and connect with fellow foodies from every corner of the world.
+</p>
 
-### `npm run build`
+<p align="center">
+  Responsive design is at the heart of our website, ensuring that you can access and enjoy our treasure trove of recipes from any device. Whether you're browsing on a desktop or smartphone, the experience will be seamless and delightful.
+</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Built With
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This app was built with some technologies below:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- CSS
+- Javascript
+- React
+- Axios
+- Redux
+- Bootstrap
+- Reactstrap
+- styled-components
 
-### `npm run eject`
+## Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+If you want to run this project locally, we recommend you configure the back-end first before configuring this repo front-end.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Clone the Repo
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+  git clone https://github.com/assyifaptrs/mama-recipe-app.git
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Go To Folder Repo
 
-## Learn More
+```
+  cd mama-recipe-app
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Install Module
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+  npm install
+```
 
-### Code Splitting
+- Setup .env
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+  REACT_APP_BACKEND_URL =
+```
 
-### Analyzing the Bundle Size
+- Type `npm run dev` To Start Website
+- Type `npm run start` To Start Production
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Screenshot
 
-### Making a Progressive Web App
+| Login Page                                                                           | Register Page                                                                              |
+| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
+| [![Login.png](https://i.postimg.cc/FzfW0BBk/Login.png)](https://postimg.cc/5QVSVn1f) | [![Register.png](https://i.postimg.cc/yNVLLdGH/Register.png)](https://postimg.cc/sMNPXVy6) |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+| Landing Page                                                                                       | Profile Page                                                                             |
+| -------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| [![Landing-Page.png](https://i.postimg.cc/BnQ3RxtY/Landing-Page.png)](https://postimg.cc/hfwNdQLT) | [![Profile.png](https://i.postimg.cc/1tTrwxjx/Profile.png)](https://postimg.cc/qhsKHFrQ) |
 
-### Advanced Configuration
+| List Recipe Page                                                                                 | Search Page                                                                            |
+| ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- |
+| [![List-Recipe.png](https://i.postimg.cc/XJyCMrQh/List-Recipe.png)](https://postimg.cc/CBS1kxyH) | [![Search.png](https://i.postimg.cc/qqxg0ynm/Search.png)](https://postimg.cc/30W3Fytp) |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+| Add Recipe Page                                                                                | Detail Recipe Page                                                                                   |
+| ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| [![Add-Recipe.png](https://i.postimg.cc/cCb7Z70R/Add-Recipe.png)](https://postimg.cc/Zv6vxd9n) | [![Detail-Recipe.png](https://i.postimg.cc/KjHw1sn4/Detail-Recipe.png)](https://postimg.cc/Mf1d4538) |
 
-### Deployment
+| Detail Video Page                                                                                  |
+| -------------------------------------------------------------------------------------------------- |
+| [![Detail-Video.png](https://i.postimg.cc/xjBSTcg5/Detail-Video.png)](https://postimg.cc/s1PLTfkG) |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Contributing
 
-### `npm run build` fails to minify
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## Related Project
+
+:rocket: [`Backend Mama Recipe`](https://github.com/assyifaptrs/mama-recipe-api)
+
+:rocket: [`Frontend Mama Recipe`](https://github.com/assyifaptrs/mama-recipe-app)
+
+## Contact
+
+- Email : [`muliaassyifa@gmail.com`](mailto:muliaassyifa@gmail.com)
+
+- LinkedIn : [`/in/assyifa-putri/`](https://www.linkedin.com/in/assyifa-putri/)
+
+- GitHub : [`assyifaptrs`](https://github.com/assyifaptrs)
