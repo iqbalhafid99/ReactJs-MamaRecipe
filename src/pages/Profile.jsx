@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import PenImage from "../assets/images/profile/pen.png";
-import ProfileImage from "../assets/images/profile/profil.png";
+import ProfileImage from "../assets/images/profile/iqbal.png";
 import ResepImage1 from "../assets/images/profile/resep1.png";
 import ResepImage2 from "../assets/images/profile/resep2.png";
 import { Link } from "react-router-dom";
@@ -44,7 +44,11 @@ const Profile = () => {
       <header>
         <div className="flex flex-col items-center mt-40">
           <div className="flex">
-            <img src={ProfileImage} alt="" />
+            <img
+              src={ProfileImage}
+              alt=""
+              className="h-[172px] w-[172px] rounded-full"
+            />
             <button onClick={toggleChangeProfile}>
               <img src={PenImage} alt="" className="absolute" />
             </button>

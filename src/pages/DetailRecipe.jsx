@@ -57,7 +57,7 @@ const DetailRecipe = () => {
               <img
                 src={`${process.env.REACT_APP_BACKEND_URL}/${food.image}`}
                 alt=""
-                className="w-[1082px] h-[700px] rounded-2xl"
+                className="max-w-full h-[700px] rounded-2xl"
               />
               <span className="flex justify-end gap-5 -mt-20 mr-10">
                 <FontAwesomeIcon

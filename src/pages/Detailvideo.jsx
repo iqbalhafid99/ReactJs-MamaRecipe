@@ -40,15 +40,15 @@ const Detailvideo = () => {
           <iframe
             width="1280"
             height="720"
-            src={videoData ? videoData.video : ""}
-            title="step masak"
+            src="https://www.youtube.com/embed/vp3pdu2_aLE"
+            title="RESEP KOLAK PISANG KOLANG KALING | CARA MEMBUAT KOLAK PISANG  | Ide Jualan Bulan Puasa 2023"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
 
           <div className="mt-10">
-            <Link className="font-medium text-4xl">{videoData.nama_resep}</Link>
+            <Link className="font-medium text-4xl">Kolak Pisang</Link>
             <p className="text-bulan font-medium text-2xl mt-3">3 months ago</p>
           </div>
         </div>
