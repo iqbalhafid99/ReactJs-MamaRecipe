@@ -75,15 +75,11 @@
   Feel free to modify or enhance the content as per your preference. Happy cooking and coding! 🍳👩‍🍳👨‍🍳
 </p>
 
-## Built With
+## Tech Stack
 
-This app was built with some technologies below:
+**Client:** React, Redux, TailwindCSS
 
-- Tailwind CSS
-- Javascript
-- React JS
-- Axios
-- Redux
+**Server:** Node, Express
 
 ## Installation
 
