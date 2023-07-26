@@ -118,25 +118,19 @@ If you want to run this project locally, we recommend you configure the back-end
 
 ## Screenshot
 
-| Login Page                                                                           | Register Page                                                                              |
-| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
-| [![Login.png](https://i.postimg.cc/FzfW0BBk/Login.png)](https://postimg.cc/5QVSVn1f) | [![Register.png](https://i.postimg.cc/yNVLLdGH/Register.png)](https://postimg.cc/sMNPXVy6) |
+## More Screenshoot
 
-| Landing Page                                                                                       | Profile Page                                                                             |
-| -------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| [![Landing-Page.png](https://i.postimg.cc/BnQ3RxtY/Landing-Page.png)](https://postimg.cc/hfwNdQLT) | [![Profile.png](https://i.postimg.cc/1tTrwxjx/Profile.png)](https://postimg.cc/qhsKHFrQ) |
+| <h3>Login Page</h3>                                                                                                                                                                        | <h3>Home Page</h3>                                                                                                                       |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| <img align="center" width="500" src="https://res.cloudinary.com/dwc1snd78/image/upload/v1689248403/readmegithubpurpose/screencapture-localhost-3000-login-2023-07-13-17_20_08_djdikj.png"> | <img align="center" width="500" src="https://res.cloudinary.com/dwc1snd78/image/upload/v1689248402/readmegithubpurpose/home_sgveym.png"> |
 
-| List Recipe Page                                                                                 | Search Page                                                                            |
-| ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- |
-| [![List-Recipe.png](https://i.postimg.cc/XJyCMrQh/List-Recipe.png)](https://postimg.cc/CBS1kxyH) | [![Search.png](https://i.postimg.cc/qqxg0ynm/Search.png)](https://postimg.cc/30W3Fytp) |
+| <h3>Profile Page</h3>                                                                                                                                                                          | <h3>Add Recipe Page</h3>                                                                                                                                                                                        |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img align="center" width="500" src="https://res.cloudinary.com/dwc1snd78/image/upload/v1689248407/readmegithubpurpose/screencapture-localhost-3000-profile-2-2023-07-13-17_15_39_dsosxh.png"> | <img align="center" width="500" src="https://res.cloudinary.com/dwc1snd78/image/upload/v1689248416/readmegithubpurpose/screencapture-mama-recipe-blush-vercel-app-add-recipe-1-2023-07-13-16_25_17_wfjq5z.png"> |
 
-| Add Recipe Page                                                                                | Detail Recipe Page                                                                                   |
-| ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| [![Add-Recipe.png](https://i.postimg.cc/cCb7Z70R/Add-Recipe.png)](https://postimg.cc/Zv6vxd9n) | [![Detail-Recipe.png](https://i.postimg.cc/KjHw1sn4/Detail-Recipe.png)](https://postimg.cc/Mf1d4538) |
-
-| Detail Video Page                                                                                  |
-| -------------------------------------------------------------------------------------------------- |
-| [![Detail-Video.png](https://i.postimg.cc/xjBSTcg5/Detail-Video.png)](https://postimg.cc/s1PLTfkG) |
+| <h3>Register Page</h3>                                                                                                                                                                        | <h3>Search Page</h3>                                                                                                                             |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <img align="center" width="500" src="https://res.cloudinary.com/dwc1snd78/image/upload/v1689248411/readmegithubpurpose/screencapture-localhost-3000-register-2023-07-13-17_20_22_hj0h5d.png"> | <img align="center" width="500" src="https://res.cloudinary.com/dwc1snd78/image/upload/v1689248419/readmegithubpurpose/searchresult_ufupou.png"> |
 
 ## Related Project
 
