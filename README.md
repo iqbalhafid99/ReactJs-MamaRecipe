@@ -1,6 +1,6 @@
 <br/>
 <p align="center">
-  <a href="https://github.com/assyifaptrs/mama-recipe-app">
+  <a href="https://github.com/iqbalhafid99/ReactJs-MamaRecipe">
     <img src="https://i.postimg.cc/JnsbMGwj/mamarecipe-logo.png" alt="Logo" width="150" height="180">
   </a>
 
@@ -10,14 +10,14 @@
     Discover Recipe & Delicious Food.
     <br/>
     <br/>
-    <a href="https://github.com/assyifaptrs/mama-recipe-app"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/iqbalhafid99/ReactJs-MamaRecipe"><strong>Explore the docs »</strong></a>
     <br/>
     <br/>
-    <a href="https://github.com/assyifaptrs/mama-recipe-app">View Demo</a>
+    <a href="https://github.com/iqbalhafid99/ReactJs-MamaRecipe">View Demo</a>
     .
-    <a href="https://github.com/assyifaptrs/mama-recipe-app/issues">Report Bug</a>
+    <a href="https://github.com/iqbalhafid99/ReactJs-MamaRecipe/issues">Report Bug</a>
     .
-    <a href="https://github.com/assyifaptrs/mama-recipe-app/issues">Request Feature</a>
+    <a href="https://github.com/iqbalhafid99/ReactJs-MamaRecipe/issues">Request Feature</a>
   </p>
 </p>
 
@@ -31,34 +31,59 @@
 
 ## About The Project
 
-<p align="center">
-  Welcome to our mouthwatering world of culinary delights! Our recipes food website, powered by the cutting-edge React.js framework, is your go-to destination for a delightful gastronomic journey! 🥗
+<h1>
+    Mama Recipe - Your Gastronomic Delight!
+</h1>
+
+<p>
+  Welcome to Mama Recipe, a delightful culinary journey powered by cutting-edge technologies like React.js, Redux, and Tailwind CSS! 🥗
 </p>
 
-<p align="center">
-  With the power of React.js, we've harnessed the latest web technologies to deliver a lightning-fast browsing experience. Say goodbye to long loading times, as our optimized performance guarantees swift access to your favorite recipes and cooking tips.
+<h2>
+    Lightning-Fast Browsing Experience
+</h2>
+
+<p>
+  With the power of React.js and optimized performance, say goodbye to long loading times! Enjoy swift access to your favorite recipes and cooking tips without any hassle.
 </p>
 
-<p align="center">
-  But it's not just about recipes! React.js empowers us to build a dynamic community of food enthusiasts like yourself. Engage in lively discussions, share your culinary masterpieces, and connect with fellow foodies from every corner of the world.
+<h2>
+    Engage with Food Enthusiasts
+</h2>
+
+<p>
+  Mama Recipe isn't just about recipes; it's a dynamic community of food enthusiasts like yourself! Join lively discussions, share your culinary masterpieces, and connect with fellow foodies from all around the world.
 </p>
 
-<p align="center">
-  Responsive design is at the heart of our website, ensuring that you can access and enjoy our treasure trove of recipes from any device. Whether you're browsing on a desktop or smartphone, the experience will be seamless and delightful.
+<h2>
+    Seamlessly Responsive Design
+</h2>
+
+<p>
+    No matter what device you're using, Mama Recipe's responsive design ensures a seamless and delightful experience. Browse from your desktop or smartphone, and enjoy our treasure trove of recipes hassle-free.
+</p>
+
+<h2>
+    Get Started
+</h2>
+
+<p>
+  Ready to embark on a mouthwatering journey? Clone this repository and start exploring the world of Mama Recipe today!
+</p>
+
+<p>
+  Feel free to modify or enhance the content as per your preference. Happy cooking and coding! 🍳👩‍🍳👨‍🍳
 </p>
 
 ## Built With
 
 This app was built with some technologies below:
 
-- CSS
+- Tailwind CSS
 - Javascript
-- React
+- React JS
 - Axios
 - Redux
-- Bootstrap
-- Reactstrap
-- styled-components
 
 ## Installation
 
@@ -67,13 +92,13 @@ If you want to run this project locally, we recommend you configure the back-end
 - Clone the Repo
 
 ```
-  git clone https://github.com/assyifaptrs/mama-recipe-app.git
+  git clone https://github.com/iqbalhafid99/ReactJs-MamaRecipe
 ```
 
 - Go To Folder Repo
 
 ```
-  cd mama-recipe-app
+  cd Frontend-MamaRecipe
 ```
 
 - Install Module
@@ -113,26 +138,18 @@ If you want to run this project locally, we recommend you configure the back-end
 | -------------------------------------------------------------------------------------------------- |
 | [![Detail-Video.png](https://i.postimg.cc/xjBSTcg5/Detail-Video.png)](https://postimg.cc/s1PLTfkG) |
 
-## Contributing
-
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
 ## Related Project
 
-:rocket: [`Backend Mama Recipe`](https://github.com/assyifaptrs/mama-recipe-api)
+:rocket: [`REST API Mama Recipe`](https://github.com/iqbalhafid99/Backend-MamaRecipe)
 
-:rocket: [`Frontend Mama Recipe`](https://github.com/assyifaptrs/mama-recipe-app)
+:rocket: [`Frontend Mama Recipe`](https://github.com/iqbalhafid99/ReactJs-MamaRecipe)
 
 ## Contact
 
-- Email : [`muliaassyifa@gmail.com`](mailto:muliaassyifa@gmail.com)
+- Email : [`mohiqbalhafid@gmail.com`](mailto:muliaassyifa@gmail.com)
 
-- LinkedIn : [`/in/assyifa-putri/`](https://www.linkedin.com/in/assyifa-putri/)
+- LinkedIn : [`/in/mohiqbalhafid`](https://www.linkedin.com/in/mohiqbalhafid/)
 
-- GitHub : [`assyifaptrs`](https://github.com/assyifaptrs)
+- GitHub : [`iqbalhafid99`](https://github.com/iqbalhafid99)
+
+- Instagram : [`iqbalhafid_`](https://www.instagram.com/iqbalhafid_/)
