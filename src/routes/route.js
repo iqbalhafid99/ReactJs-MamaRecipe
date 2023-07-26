@@ -21,6 +21,7 @@ import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
 import Coba from "../pages/Coba";
 import CobaResep from "../pages/CobaResep";
+import UpdateRecipe from "../pages/UpdateRecipe";
 
 const PrivateRoute = () => {
   const token = localStorage.getItem("token");
@@ -41,7 +42,8 @@ const route = () => {
           <Route path="/profile" element={<Profile />} />
           <Route path="login" element={<Login />} />
           <Route path="/detail-recipe/:id" element={<DetailRecipe />} />
-          <Route path="/detail-video" element={<Detailvideo />} />
+          <Route path="/detail-video/:id" element={<Detailvideo />} />
+          <Route path="/update/:id" element={<UpdateRecipe />} />
           <Route path="/params" element={<GetParams />} />
           <Route path="/params/:id" element={<GetParamsID />} />
           <Route path="/home" element={<Home />} />

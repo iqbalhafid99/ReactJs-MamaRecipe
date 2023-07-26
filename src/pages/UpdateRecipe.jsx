@@ -2,13 +2,17 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
-const AddRecipe = () => {
+const UpdateRecipe = () => {
   const navigate = useNavigate();
+  const params = useParams();
+
   useEffect(() => {
     document.title = "Add Recipe";
   }, []);
+
+  const { id } = params;
 
   const [title, setTitle] = useState("");
   const [ingredients, setIngredients] = useState("");
@@ -26,25 +30,6 @@ const AddRecipe = () => {
     console.log(imageUrl);
   };
 
-  // const handleSubmit = () => {
-  //   const recipeData = {
-  //     id: id,
-  //     nama_resep: title,
-  //     resep: ingredients,
-  //     video: video,
-  //     image: image,
-  //   };
-
-  //   axios
-  //     .post("http://localhost:3000/insert", recipeData)
-  //     .then((response) => {
-  //       console.log("Data berhasil diupload:", response.data);
-  //     })
-  //     .catch((error) => {
-  //       console.error("Terjadi kesalahan:", error);
-  //     });
-  // };
-
   const handleSubmit = () => {
     const formData = new FormData();
     formData.append("nama_resep", title);
@@ -61,20 +46,21 @@ const AddRecipe = () => {
     formData.append("data", JSON.stringify(recipeData));
 
     axios
-      .post(`${process.env.REACT_APP_BACKEND_URL}/insertrecipe`, formData, {
+      .put(`${process.env.REACT_APP_BACKEND_URL}/update/${id}`, formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
       })
       .then((response) => {
         console.log("Data berhasil diupload:", response.data);
-        alert("Resep berhasil di tambahkan");
+        alert("Resep berhasil di update");
 
         navigate("/");
         // Lakukan tindakan lain setelah berhasil mengupload data
       })
       .catch((error) => {
         console.error("Terjadi kesalahan:", error);
+        alert("gagal menambahkan resep");
         // Handle kesalahan jika terjadi
       });
   };
@@ -136,4 +122,4 @@ const AddRecipe = () => {
   );
 };
 
-export default AddRecipe;
+export default UpdateRecipe;

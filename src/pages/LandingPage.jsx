@@ -4,21 +4,77 @@ import UserIcon from "../assets/images/Food Recipe/User icon.png";
 import PopularImage from "../assets/images/Food Recipe/popular.png";
 import RectangleImage from "../assets/images/Food Recipe/Rectangle.png";
 import HiasanImage from "../assets/images/Food Recipe/hiasan.png";
-// import ContentImage1 from "../assets/images/Food Recipe/konten1.png";
 import NewRecipeImage from "../assets/images/Food Recipe/new recipe.png";
 import HeroImage from "../assets/images/Food Recipe/hero.png";
 import { Link, useNavigate } from "react-router-dom";
 import Footer from "../components/Footer";
 import axios from "axios";
+import ReactPaginate from "react-paginate";
 
 const LandingPage = () => {
+  const [sortType, setSortType] = useState("asc");
+
   const [foods, setFoods] = useState([]);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [searchStatus, setSearchStatus] = useState("idle"); // idle | searching | success | error
+
+  const [pageNumber, setPageNumber] = useState(0);
+  const itemsPerPage = 6; // Ubah sesuai dengan jumlah item yang ingin ditampilkan per halaman
+  const pageCount = Math.ceil(foods.length / itemsPerPage);
+
+  const displayFoods = foods
+    .slice(pageNumber * itemsPerPage, (pageNumber + 1) * itemsPerPage)
+    .map((food) => (
+      <Link to={`/detail-recipe/${food.id}`} key={food.id}>
+        <img
+          src={`${process.env.REACT_APP_BACKEND_URL}/${food.image}`}
+          alt=""
+          className="md:w-[500px] md:h-[500px] w-[250px] h-[250px] md:mt-28 hover:shadow-2xl rounded-2xl"
+        />
+        <p className="md:-mt-20 text-center md:-ml-60 md:text-3xl text-2xl text-teks font-medium hover:text-primary">
+          {food.nama_resep}
+        </p>
+      </Link>
+    ));
+
+  const handleSortTypeChange = () => {
+    const newSortType = sortType === "asc" ? "desc" : "asc";
+    setSortType(newSortType);
+  };
+
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      handleSearch();
+    }
+  };
+
+  const handleSearch = async () => {
+    if (searchQuery.trim() === "") {
+      return;
+    }
+
+    setSearchStatus("searching");
+
+    try {
+      const response = await axios.get(
+        `${process.env.REACT_APP_BACKEND_URL}/foods/search?query=${searchQuery}`
+      );
+      setFoods(response.data.payload.data);
+      setSearchStatus("success");
+    } catch (error) {
+      console.log("Gagal melakukan pencarian", error);
+      setSearchStatus("error");
+    }
+  };
+
+  const handlePageChange = ({ selected }) => {
+    setPageNumber(selected);
+  };
 
   // log out
   const handleLogout = () => {
-    localStorage.removeItem("token");
-    localStorage.removeItem("data");
-    localStorage.removeItem("persist:root");
+    localStorage.clear();
+
     alert("Log out berhasil");
     navigate("/login");
   };
@@ -28,12 +84,20 @@ const LandingPage = () => {
       .get(`${process.env.REACT_APP_BACKEND_URL}/food/`)
       .then((response) => {
         console.log(response.data.payload.data);
-        setFoods(response.data.payload.data);
+        const sortedData = response.data.payload.data.sort((a, b) => {
+          if (sortType === "asc") {
+            return a.nama_resep.localeCompare(b.nama_resep);
+          } else {
+            return b.nama_resep.localeCompare(a.nama_resep);
+          }
+        });
+        setFoods(sortedData);
       })
       .catch((err) => {
-        console.log("ini gagal");
+        console.log("Gagal mengambil data");
       });
   };
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -73,21 +137,27 @@ const LandingPage = () => {
               type="text"
               placeholder="search restaurant, food"
               className="py-9 pl-20 pr-[350px] border font-normal text-gray-500 rounded-2xl bg-background text-lg placeholder:text-gray-300"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              onKeyPress={handleKeyPress}
             />
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={3}
-              stroke="currentColor"
-              className="w-6 h-6 text-gray-300 -mt-[60px] ml-10"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-              />
-            </svg>
+
+            <Link onClick={handleSearch}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={3}
+                stroke="currentColor"
+                className="w-6 h-6 text-gray-300 -mt-[60px] ml-10"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                />
+              </svg>
+            </Link>
           </div>
         </div>
         <div className="md:mt-28 flex flex-col items-center justify-center">
@@ -191,21 +261,43 @@ const LandingPage = () => {
         <div className="pt-52">
           <div className="flex items-center">
             <div className="w-6 h-36 bg-primary ml-30" />
-            <p className="text-5xl font-medium text-teks pl-8">New Recipe</p>
+            <p className="text-5xl font-medium text-teks pl-8">All Recipe</p>
           </div>
-          <div className="mt-28 flex flex-wrap justify-center gap-10">
-            {foods.map((food) => (
-              <Link to={`/detail-recipe/${food.id}`} key={food.id}>
-                <img
-                  src={`${process.env.REACT_APP_BACKEND_URL}/${food.image}`}
-                  alt=""
-                  className="md:w-[500px] md:h-[500px] w-[250px] h-[250px] md:mt-28 hover:shadow-2xl rounded-2xl"
-                />
-                <p className="md:-mt-20 text-center md:-ml-60 md:text-3xl text-2xl text-teks font-medium hover:text-primary">
-                  {food.nama_resep}
-                </p>
-              </Link>
-            ))}
+
+          {/* content */}
+          <div className="flex justify-center mt-10">
+            <button className="text-primary" onClick={handleSortTypeChange}>
+              {sortType === "desc" ? "Sort Descending" : "Sort Ascending"}
+            </button>
+          </div>
+          <div className=" flex flex-wrap justify-center gap-10">
+            {displayFoods}
+            {searchStatus === "error" && (
+              <p className="text-primary text-2xl font-bold">
+                Tidak dapat melakukan pencarian. <br /> Silakan coba lagi.
+              </p>
+            )}
+
+            {searchStatus === "success" && foods.length === 0 && (
+              <p className="text-primary text-2xl font-bold">
+                Resep tidak ditemukan.
+              </p>
+            )}
+          </div>
+          <div className="flex justify-center mt-28 ">
+            <ReactPaginate
+              className="flex gap-5 text-xl text-primary font-bold"
+              previousLabel={"Previous"}
+              nextLabel={"Next"}
+              breakLabel={"..."}
+              breakClassName={"break-me"}
+              pageCount={pageCount}
+              marginPagesDisplayed={2}
+              pageRangeDisplayed={5}
+              onPageChange={handlePageChange}
+              containerClassName={"pagination"}
+              activeClassName={"active"}
+            />
           </div>
         </div>
       </div>

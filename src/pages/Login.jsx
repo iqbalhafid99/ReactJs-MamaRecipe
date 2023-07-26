@@ -21,7 +21,9 @@ const Login = () => {
       localStorage.setItem("token", data.token);
       localStorage.setItem("data", JSON.stringify(data));
       const check =
-        data === null ? alert("email or password is wrong") : navigate("/");
+        data === null
+          ? alert("email or password is wrong")
+          : navigate("/") + alert("login succcessfully");
       return check;
     };
     console.log(form);

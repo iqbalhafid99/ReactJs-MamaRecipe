@@ -54,17 +54,26 @@ const Navbar = () => {
       >
         <nav className="list-none flex flex-col gap-4 font-medium">
           <li>
-            <p className="text-scondary hover:font-bold hover:text-blue-500 hover:duration-300">
+            <p
+              className="text-scondary hover:font-bold hover:text-blue-500 hover:duration-300"
+              onClick={() => navigate("/")}
+            >
               Home
             </p>
           </li>
           <li>
-            <p className="text-scondary hover:font-bold hover:text-blue-500 hover:duration-300">
+            <p
+              className="text-scondary hover:font-bold hover:text-blue-500 hover:duration-300"
+              onClick={() => navigate("/add-recipe")}
+            >
               Add Recipe
             </p>
           </li>
           <li>
-            <p className="text-scondary hover:font-bold hover:text-blue-500 hover:duration-300">
+            <p
+              className="text-scondary hover:font-bold hover:text-blue-500 hover:duration-300"
+              onClick={() => navigate("/profile")}
+            >
               Profile
             </p>
           </li>
