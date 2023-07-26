@@ -24,7 +24,7 @@
 ## Table Of Contents
 
 - [About the Project](#about-the-project)
-- [Built With](#built-with)
+- [Built With](#Tech-Stack)
 - [Installation](#installation)
 - [Related Project](#related-project)
 - [Contact](#contact)
